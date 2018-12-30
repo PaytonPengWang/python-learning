@@ -1,6 +1,12 @@
 import turtle
 
 def main():
+    turtle.penup();
+    turtle.backward(200);
+    turtle.pendown();
+    turtle.pensize(2);
+    turtle.pencolor("#3ff");
+
     size = 50
 
     while size <= 150:
