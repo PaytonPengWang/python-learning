@@ -10,7 +10,7 @@
 import turtle
 
 INIT_LENGTH = 80
-MIN_LENGTH = 10
+MIN_LENGTH = 20
 STEP = 10
 
 def main():
