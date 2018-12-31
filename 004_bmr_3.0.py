@@ -38,7 +38,9 @@ def main():
             bmr = -1
 
         if bmr != -1:
-            print("基础代谢率(大卡)：" ,bmr)
+            # 字符串格式化
+            print('性别：{}, 体重:{}kg, 身高:{}cm, 年龄:{}岁'.format(gender,weight,height,age))
+            print("基础代谢率(大卡)：{}大卡".format(bmr))
         else:
             print("不支持")
 
