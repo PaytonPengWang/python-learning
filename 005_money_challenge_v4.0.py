@@ -21,6 +21,9 @@ import math
 saving = 1
 
 def save_money_in_n_weeks(INCREASE_MONEY,TOTAL_WEEK):
+    # 如果需要在方法内改变全局变量的value，需要如下操作
+    global saving
+
     # 每周存入的金额
     money_per_week = INCREASE_MONEY
     # 第几周
