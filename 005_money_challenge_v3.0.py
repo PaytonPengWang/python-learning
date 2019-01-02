@@ -26,7 +26,7 @@ def main():
     week = 1
     account_list = []
     
-    for week in range(1,53):
+    for week in range(1,TOTAL_WEEK+1):
         account_list.append(money_per_week)
 
         print("第{0}周，存入{1}元，账户累计：{2}".format(week,money_per_week,math.fsum(account_list)))
