@@ -47,9 +47,9 @@ def main():
             days+=31
         if i == 2 and is_leap_year(year):
             days+=29
-        else
+        elif i==2:
             days+=28
-
+    days+=day
     # days_in_month_tup = (31,28,31,30,31,30,31,31,30,31,30,31)
     # days = sum(days_in_month_tup[:month-1]) + day
 
