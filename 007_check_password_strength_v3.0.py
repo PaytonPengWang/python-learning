@@ -44,7 +44,7 @@ def save_file(password):
     # 2: 操作文件
     # write(): 将文本数据写入文件中
     # writelines(): 将字符串列表写入文件中
-    passwordfile.write(password)
+    passwordfile.write("{}\n".format(password))
     # passwordfile.writelines(password)
 
 
