@@ -38,17 +38,25 @@ def save_file(password):
     #   w writeonly , will create the file if it not is existed
     #   a append
     #   r+ read and write
-    passwordfile = open("./password.txt",'a')
+    passwordfile = open("./password.txt",'r')
     
 
     # 2: 操作文件
     # write(): 将文本数据写入文件中
     # writelines(): 将字符串列表写入文件中
-    passwordfile.write("{}\n".format(password))
+    # passwordfile.write("{}\n".format(password))
     # passwordfile.writelines(password)
 
+    # 3: 读取文件
+    # read()  返回整个文件内容的一个字符串
+    # readline() 返回为文件下一行内容的字符串
+    # readlines()返回值为整个文件内容的列表，每项是以换行符为结尾的一行字符串
+    #
+    file_content = passwordfile.read()
+    print("--------------")
+    print(file_content)
 
-    # 3: 关闭文件
+    # 4: 关闭文件
     # close()
     passwordfile.close()
 
